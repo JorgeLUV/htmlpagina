@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    min-height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+                url("../docs/header/CESUNlogo.png");
+    background-position: center;
+    background-size: cover;
+    padding: 20px 5%;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 130px;
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links ul li a:hover {
+    color: #00eaff;
+}
+
+/* Texto principal del header */
+.header-text {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.header-text p {
+    margin: 10px 0 20px;
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #00eaff;
+    color: #000;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+}
+
+/* SECCIONES GENERALES */
+.section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+/* LENGUAJES DE PROGRAMACIÓN */
+.languages {
+    background: #fff;
+}
+
+.lang-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.lang-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.lang-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.lang-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+
+.lang-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+    margin-top: 40px;
+}
